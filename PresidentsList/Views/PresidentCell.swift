@@ -6,3 +6,28 @@
 //
 
 import SwiftUI
+
+struct PresidentCell: View {
+    
+    var president: PresidentsViewModel
+    
+    var body: some View {
+        HStack {
+            VStack(alignment: .leading) {
+                Text(president.name)
+                    .font(.headline)
+                    .fontWeight(.heavy)
+                Text(president.party)
+                    .font(.subheadline)
+            }
+        }
+    }
+}
+
+struct PresidentCell_Previews: PreviewProvider {
+    static var previews: some View {
+        PresidentCell(president:
+            PresidentsViewModel.default)
+        .previewLayout(.sizeThatFits)
+    }
+}
