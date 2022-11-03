@@ -11,11 +11,6 @@
 		8690E31D29145011007EC186 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8690E31C29145011007EC186 /* ContentView.swift */; };
 		8690E31F29145013007EC186 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8690E31E29145013007EC186 /* Assets.xcassets */; };
 		8690E32229145013007EC186 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8690E32129145013007EC186 /* Preview Assets.xcassets */; };
-		8690E32429145013007EC186 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8690E32329145013007EC186 /* Persistence.swift */; };
-		8690E32729145013007EC186 /* PresidentsList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8690E32529145013007EC186 /* PresidentsList.xcdatamodeld */; };
-		8690E33129145013007EC186 /* PresidentsListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8690E33029145013007EC186 /* PresidentsListTests.swift */; };
-		8690E33B29145013007EC186 /* PresidentsListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8690E33A29145013007EC186 /* PresidentsListUITests.swift */; };
-		8690E33D29145013007EC186 /* PresidentsListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8690E33C29145013007EC186 /* PresidentsListUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,13 +36,8 @@
 		8690E31C29145011007EC186 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8690E31E29145013007EC186 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8690E32129145013007EC186 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		8690E32329145013007EC186 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		8690E32629145013007EC186 /* PresidentsList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PresidentsList.xcdatamodel; sourceTree = "<group>"; };
 		8690E32C29145013007EC186 /* PresidentsListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresidentsListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8690E33029145013007EC186 /* PresidentsListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresidentsListTests.swift; sourceTree = "<group>"; };
 		8690E33629145013007EC186 /* PresidentsListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresidentsListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8690E33A29145013007EC186 /* PresidentsListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresidentsListUITests.swift; sourceTree = "<group>"; };
-		8690E33C29145013007EC186 /* PresidentsListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresidentsListUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +69,6 @@
 			isa = PBXGroup;
 			children = (
 				8690E31929145011007EC186 /* PresidentsList */,
-				8690E32F29145013007EC186 /* PresidentsListTests */,
-				8690E33929145013007EC186 /* PresidentsListUITests */,
 				8690E31829145011007EC186 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,8 +89,6 @@
 				8690E31A29145011007EC186 /* PresidentsListApp.swift */,
 				8690E31C29145011007EC186 /* ContentView.swift */,
 				8690E31E29145013007EC186 /* Assets.xcassets */,
-				8690E32329145013007EC186 /* Persistence.swift */,
-				8690E32529145013007EC186 /* PresidentsList.xcdatamodeld */,
 				8690E32029145013007EC186 /* Preview Content */,
 			);
 			path = PresidentsList;
@@ -114,23 +100,6 @@
 				8690E32129145013007EC186 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		8690E32F29145013007EC186 /* PresidentsListTests */ = {
-			isa = PBXGroup;
-			children = (
-				8690E33029145013007EC186 /* PresidentsListTests.swift */,
-			);
-			path = PresidentsListTests;
-			sourceTree = "<group>";
-		};
-		8690E33929145013007EC186 /* PresidentsListUITests */ = {
-			isa = PBXGroup;
-			children = (
-				8690E33A29145013007EC186 /* PresidentsListUITests.swift */,
-				8690E33C29145013007EC186 /* PresidentsListUITestsLaunchTests.swift */,
-			);
-			path = PresidentsListUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,8 +232,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8690E32729145013007EC186 /* PresidentsList.xcdatamodeld in Sources */,
-				8690E32429145013007EC186 /* Persistence.swift in Sources */,
 				8690E31D29145011007EC186 /* ContentView.swift in Sources */,
 				8690E31B29145011007EC186 /* PresidentsListApp.swift in Sources */,
 			);
@@ -274,7 +241,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8690E33129145013007EC186 /* PresidentsListTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,8 +248,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8690E33B29145013007EC186 /* PresidentsListUITests.swift in Sources */,
-				8690E33D29145013007EC186 /* PresidentsListUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,19 +549,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		8690E32529145013007EC186 /* PresidentsList.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				8690E32629145013007EC186 /* PresidentsList.xcdatamodel */,
-			);
-			currentVersion = 8690E32629145013007EC186 /* PresidentsList.xcdatamodel */;
-			path = PresidentsList.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 8690E30F29145011007EC186 /* Project object */;
 }
