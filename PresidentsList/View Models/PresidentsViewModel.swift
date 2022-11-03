@@ -7,6 +7,7 @@
 
 import Foundation
 
+//Creates a struct to be used within the program to display certain parts from the plist file
 struct PresidentsViewModel {
     var president: USPresident
     

@@ -8,10 +8,12 @@
 import SwiftUI
 import Foundation
 
+//Creates the details page for the cells within the list on the main page
 struct PresidentDetailView: View {
     
     var president: PresidentsViewModel
     
+    //Formats the number in ordinal style (Took me forever to figure this out)
     var numFormatter: String {
         let formatter = NumberFormatter()
         formatter.numberStyle = .ordinal

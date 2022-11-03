@@ -7,6 +7,7 @@
 
 import Foundation
 
+//Grabs the data from the plist file "presidents" and decodes it using the created decoder
 class PresidentsListViewModel: ObservableObject {
     
     @Published var presidents: [PresidentsViewModel] = []

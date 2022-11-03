@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+//Creates a cell to be used within the list on the apps main page
 struct PresidentCell: View {
     
     var president: PresidentsViewModel

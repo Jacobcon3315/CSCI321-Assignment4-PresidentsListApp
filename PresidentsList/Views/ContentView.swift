@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+//Displays a List that includes all of the presidents in number order as well as go to their details page when selected
 struct ContentView: View {
     
     @StateObject private var presidentListVM = PresidentsListViewModel()

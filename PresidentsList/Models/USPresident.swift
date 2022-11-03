@@ -7,6 +7,7 @@
 
 import Foundation
 
+//Creates a decodable to be used in decoding the plist file
 struct USPresident: Decodable {
     var name = ""
     var number = 0
