@@ -29,6 +29,10 @@ struct PresidentDetailView: View {
                 .multilineTextAlignment(.center)
             
             Text("\(numFormatter) President of the United States")
+                .bold()
+            
+            Text("(\(president.startDate) to \(president.endDate))")
+                .italic()
             
             Image("seal")
                 .resizable()
@@ -38,14 +42,14 @@ struct PresidentDetailView: View {
             
             
             Text("Nickname")
-                .font(.title)
+                .font(.title2)
                 .fontWeight(.semibold)
             
             Text(president.nickname)
                 .font(.title2)
 
             Text("Political Party")
-                .font(.title)
+                .font(.title2)
                 .fontWeight(.semibold)
             
             Text(president.party)
