@@ -11,6 +11,8 @@
 		8690E31D29145011007EC186 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8690E31C29145011007EC186 /* ContentView.swift */; };
 		8690E31F29145013007EC186 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8690E31E29145013007EC186 /* Assets.xcassets */; };
 		8690E32229145013007EC186 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8690E32129145013007EC186 /* Preview Assets.xcassets */; };
+		8690E34A291451FA007EC186 /* presidents.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8690E349291451FA007EC186 /* presidents.plist */; };
+		8690E34E29145573007EC186 /* PresidentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8690E34D29145573007EC186 /* PresidentsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		8690E32129145013007EC186 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8690E32C29145013007EC186 /* PresidentsListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresidentsListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8690E33629145013007EC186 /* PresidentsListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresidentsListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8690E349291451FA007EC186 /* presidents.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = presidents.plist; sourceTree = "<group>"; };
+		8690E34D29145573007EC186 /* PresidentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresidentsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +90,10 @@
 		8690E31929145011007EC186 /* PresidentsList */ = {
 			isa = PBXGroup;
 			children = (
+				8690E34C2914555B007EC186 /* View Models */,
+				8690E34B2914548C007EC186 /* Views */,
+				8690E349291451FA007EC186 /* presidents.plist */,
 				8690E31A29145011007EC186 /* PresidentsListApp.swift */,
-				8690E31C29145011007EC186 /* ContentView.swift */,
 				8690E31E29145013007EC186 /* Assets.xcassets */,
 				8690E32029145013007EC186 /* Preview Content */,
 			);
@@ -100,6 +106,22 @@
 				8690E32129145013007EC186 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8690E34B2914548C007EC186 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8690E31C29145011007EC186 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8690E34C2914555B007EC186 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				8690E34D29145573007EC186 /* PresidentsViewModel.swift */,
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8690E32229145013007EC186 /* Preview Assets.xcassets in Resources */,
+				8690E34A291451FA007EC186 /* presidents.plist in Resources */,
 				8690E31F29145013007EC186 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -234,6 +257,7 @@
 			files = (
 				8690E31D29145011007EC186 /* ContentView.swift in Sources */,
 				8690E31B29145011007EC186 /* PresidentsListApp.swift in Sources */,
+				8690E34E29145573007EC186 /* PresidentsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
