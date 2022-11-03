@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject private var presidentListVM = PresidentsListViewModel()
+    
     var body: some View {
         NavigationStack {
-            List {
-                
-            }
+            Text("Ah")
         }
     }
 }
