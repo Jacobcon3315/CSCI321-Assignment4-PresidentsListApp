@@ -9,7 +9,7 @@ import Foundation
 
 struct USPresident: Decodable {
     var name = ""
-    var number = ""
+    var number = 0
     var startDate = ""
     var endDate = ""
     var nickname = ""

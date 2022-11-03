@@ -13,7 +13,20 @@ struct ContentView: View {
     
     var body: some View {
         NavigationStack {
-            Text("Ah")
+            List {
+                ForEach(presidentListVM.presidents, id: \.name) {
+                    presidentVM in
+                    NavigationLink(destination: PresidentDetailView(president: presidentVM)) {
+                        PresidentCell(president: presidentVM)
+                    }
+                }
+            }
+            .listStyle(.plain)
+            .navigationTitle("US Presidents")
+            .navigationBarTitleDisplayMode(.inline)
+        }
+        .onAppear {
+            presidentListVM.loadPropertyList()
         }
     }
 }

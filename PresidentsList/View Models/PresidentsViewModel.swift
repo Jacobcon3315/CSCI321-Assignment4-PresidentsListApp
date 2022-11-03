@@ -14,7 +14,7 @@ struct PresidentsViewModel {
         return president.name
     }
     
-    var number: String {
+    var number: Int {
         return president.number
     }
     
@@ -35,7 +35,7 @@ struct PresidentsViewModel {
     }
     
     static var `default`: PresidentsViewModel {
-        let president = USPresident(name: "Andrew Jackson", number: "7", startDate: "March 4, 1829", endDate: "March 3, 1837", nickname: "\"Old Hickory\"", party: "Democrat")
+        let president = USPresident(name: "Andrew Jackson", number: 7, startDate: "March 4, 1829", endDate: "March 3, 1837", nickname: "\"Old Hickory\"", party: "Democrat")
         return PresidentsViewModel(president: president)
     }
 }

@@ -16,7 +16,7 @@ struct PresidentDetailView: View {
         let formatter = NumberFormatter()
         formatter.numberStyle = .ordinal
         
-        let num = Int(president.number)!
+        let num = president.number
         
         return formatter.string(from: NSNumber(value: num)) ?? "0"
     }
